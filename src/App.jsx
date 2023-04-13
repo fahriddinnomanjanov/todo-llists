@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     const data = JSON.parse(localStorage.getItem("todos"));
     console.log(data)
-    data.length && setTodos(data)
+    data?.length && setTodos(data)
   }, [])
   
   useEffect(() => {
