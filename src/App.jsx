@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import TodoList from './components/TodoList';
 
-import data from './data'
 import Modal from './components/Modal/Modal';
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
 
   useEffect(() => {
     const data = JSON.parse(localStorage.getItem("todos"));
-    console.log(data)
     data?.length && setTodos(data)
   }, [])
   
